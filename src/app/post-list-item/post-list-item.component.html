@@ -1,0 +1,7 @@
+<ul [className]="like == 0 ? '' : like > 0 ? 'like' : 'dislike'" >
+  <h2>{{title}}</h2>
+  <p class="date">{{created_at | date : 'short'}}</p>
+  <p class="content">{{content}}</p>
+  <button class="likeButton" (click)="Like()">Love It</button>
+  <button class="dislikeButton" (click)="Dislike()">Don't Love It</button>
+</ul>
